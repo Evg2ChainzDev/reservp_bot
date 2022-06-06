@@ -1,4 +1,7 @@
 
+
+const PORT = process.env.PORT || 3000;
+
 const TelegramApi = require('node-telegram-bot-api')
 const { textShop, textShipping, textGoods, textContacts, textSupport  } = require('./texts')
 const token = "5422803579:AAHqsmew1Ss4UDgx4cRssa5B_Jr19akd0A0";
