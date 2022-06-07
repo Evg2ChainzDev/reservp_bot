@@ -3,7 +3,7 @@
 const PORT = process.env.PORT || 3000;
 
 const TelegramApi = require('node-telegram-bot-api')
-const { textShop, textShipping, textGoods, textContacts, textSupport  } = require('./texts')
+const { textShop, textShipping, textGoods, textContacts, textSupport, textSales } = require('./texts')
 const token = "5422803579:AAHqsmew1Ss4UDgx4cRssa5B_Jr19akd0A0";
 
 const bot = new TelegramApi(token, { polling: true });
@@ -16,8 +16,9 @@ const reserveMenu = {
       [{ text: "Информация об магазине", callback_data: "shop" }],
       [{ text: "Информация о доставке", callback_data: "shipping" }],
       [{ text: "Информация о товаре", callback_data: "goods" }],
+      [{ text: "Информация о скидках", callback_data: "sales" }],
       [{ text: "Контакты", callback_data: "contacts" }],
-      [{ text: "Связаться с менеджером", callback_data: "support" }]
+      [{ text: "Связаться с менеджером", callback_data: "support" }],
     ],
   }),
 };
@@ -50,6 +51,9 @@ const start = () => {
     }
     if (data == 'goods') { 
       bot.sendMessage(chatId, textGoods, reserveMenu);
+    }
+    if (data == "sales") {
+          bot.sendMessage(chatId, textSales, reserveMenu);
     }
     if (data == 'contacts') { 
       bot.sendMessage(chatId, textContacts, reserveMenu);
