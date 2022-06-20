@@ -6,7 +6,7 @@ module.exports = {
   textGoods:
     "мы реализуем только качественную консервацию прошедшую различные проверки. У нас вы можете купить: Мясную консервацию https://rezervprogress.ru/myasnye-konservy Рыбные консервы https://rezervprogress.ru/dining Овощную и фруктовую консервацию https://rezervprogress.ru/ovoshnaya-fruktovaya-konservaciya Сгущенное молоко и бакалею https://rezervprogress.ru/sgushennoe-moloko-bakaleya Посмотреть все товары на нашем сайте https://rezervprogress.ru/",
   textContacts: "текст для контактов текст для контактов текст для контактов",
-  textSupport: "текст для саппорта текст для саппорта текст для саппорта",
+  textSupport: "Вы можете нам позвонить +79228446355 Написать по электронной почте info@rezervprogress.ru Написать менеджеру в телеграмм @maxorsk или whatsapp +79228446355",
   textSales:
     "информация о скидках, информация о скидках информация о скидках информация о скидкаинформация о скидках",
 };
